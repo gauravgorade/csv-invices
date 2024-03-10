@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./css/style.css";
+import "./css/satoshi.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Login from "./pages/Login";
+import Invices from "./pages/Invices";
+import InvoiceDetails from "./pages/InvoiceDetails";
+import UploadData from "./pages/UploadData";
+import Dashobard from "./pages/Dashobard";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <AppContent />
+    </BrowserRouter>
   );
 }
-
+function AppContent() {
+  return (
+    <Routes>
+      <Route path="/login" element={<Login />} />
+      <Route path="/" element={<Dashobard />} />
+      <Route path="/invoices" element={<Invices />} />
+      <Route path="/invoice-details" element={<InvoiceDetails />} />
+      <Route path="/upload-data" element={<UploadData />} />
+      <Route path="/profile" element={<Profile />} />
+    </Routes>
+  );
+}
 export default App;
