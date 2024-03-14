@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
 import Invices from "./pages/Invices";
 import InvoiceDetails from "./pages/InvoiceDetails";
-import UploadData from "./pages/UploadData";
+import CreateOrder from "./pages/CreateOrder";
 import Dashobard from "./pages/Dashobard";
 import Profile from "./pages/Profile";
 
@@ -22,7 +22,7 @@ function AppContent() {
       <Route path="/" element={<Dashobard />} />
       <Route path="/invoices" element={<Invices />} />
       <Route path="/invoice-details" element={<InvoiceDetails />} />
-      <Route path="/upload-data" element={<UploadData />} />
+      <Route path="/create-order" element={<CreateOrder />} />
       <Route path="/profile" element={<Profile />} />
     </Routes>
   );

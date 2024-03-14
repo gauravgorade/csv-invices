@@ -13,7 +13,7 @@ import Logo from "../images/logo.svg";
 const navData = [
   { label: "Dashboard", url: "/", icon: <RxDashboard /> },
   { label: "Invoices", url: "/invoices", icon: <IoNewspaperOutline /> },
-  { label: "Upload Data", url: "/upload-data", icon: <IoCloudUploadOutline /> },
+  { label: "Create Order", url: "/create-order", icon: <IoCloudUploadOutline /> },
   { label: "Profile", url: "/profile", icon: <FiUser /> }
 ];
 
